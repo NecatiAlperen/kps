@@ -12,6 +12,8 @@
 		3B0281CE2BE01B250088A0C7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0281CD2BE01B250088A0C7 /* Item.swift */; };
 		3B0281D02BE01B270088A0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0281CF2BE01B270088A0C7 /* Assets.xcassets */; };
 		3B0281D32BE01B270088A0C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0281D22BE01B270088A0C7 /* Preview Assets.xcassets */; };
+		3B0281DB2BE021510088A0C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0281DA2BE021510088A0C7 /* Lottie */; };
+		3BBB9FB32BE1C9EE00CC7222 /* kpssSplash.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB9FB22BE1C9EE00CC7222 /* kpssSplash.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,7 @@
 		3B0281CD2BE01B250088A0C7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3B0281CF2BE01B270088A0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0281D22BE01B270088A0C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BBB9FB22BE1C9EE00CC7222 /* kpssSplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kpssSplash.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0281DB2BE021510088A0C7 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +41,7 @@
 		3B0281BD2BE01B250088A0C7 = {
 			isa = PBXGroup;
 			children = (
+				3BBB9FB22BE1C9EE00CC7222 /* kpssSplash.json */,
 				3B0281C82BE01B250088A0C7 /* kpssApp */,
 				3B0281C72BE01B250088A0C7 /* Products */,
 			);
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = kpssApp;
+			packageProductDependencies = (
+				3B0281DA2BE021510088A0C7 /* Lottie */,
+			);
 			productName = kpssApp;
 			productReference = 3B0281C62BE01B250088A0C7 /* kpssApp.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 3B0281BD2BE01B250088A0C7;
+			packageReferences = (
+				3B0281D92BE021510088A0C7 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 3B0281C72BE01B250088A0C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0281D32BE01B270088A0C7 /* Preview Assets.xcassets in Resources */,
+				3BBB9FB32BE1C9EE00CC7222 /* kpssSplash.json in Resources */,
 				3B0281D02BE01B270088A0C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B0281D92BE021510088A0C7 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B0281DA2BE021510088A0C7 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B0281D92BE021510088A0C7 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B0281BE2BE01B250088A0C7 /* Project object */;
 }
