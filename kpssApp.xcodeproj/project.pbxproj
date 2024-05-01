@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3B0281CA2BE01B250088A0C7 /* kpssAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0281C92BE01B250088A0C7 /* kpssAppApp.swift */; };
-		3B0281CC2BE01B250088A0C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0281CB2BE01B250088A0C7 /* ContentView.swift */; };
 		3B0281CE2BE01B250088A0C7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0281CD2BE01B250088A0C7 /* Item.swift */; };
 		3B0281D02BE01B270088A0C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0281CF2BE01B270088A0C7 /* Assets.xcassets */; };
 		3B0281D32BE01B270088A0C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0281D22BE01B270088A0C7 /* Preview Assets.xcassets */; };
 		3B0281DB2BE021510088A0C7 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3B0281DA2BE021510088A0C7 /* Lottie */; };
 		3BBB9FB32BE1C9EE00CC7222 /* kpssSplash.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BBB9FB22BE1C9EE00CC7222 /* kpssSplash.json */; };
+		3BBB9FB62BE1DE1A00CC7222 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB9FB52BE1DE1A00CC7222 /* SplashScreen.swift */; };
+		3BBB9FB82BE1DEAB00CC7222 /* OnboardingScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBB9FB72BE1DEAB00CC7222 /* OnboardingScreens.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B0281C62BE01B250088A0C7 /* kpssApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kpssApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0281C92BE01B250088A0C7 /* kpssAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kpssAppApp.swift; sourceTree = "<group>"; };
-		3B0281CB2BE01B250088A0C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B0281CD2BE01B250088A0C7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3B0281CF2BE01B270088A0C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0281D22BE01B270088A0C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BBB9FB22BE1C9EE00CC7222 /* kpssSplash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = kpssSplash.json; sourceTree = "<group>"; };
+		3BBB9FB52BE1DE1A00CC7222 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		3BBB9FB72BE1DEAB00CC7222 /* OnboardingScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreens.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				3B0281C92BE01B250088A0C7 /* kpssAppApp.swift */,
-				3B0281CB2BE01B250088A0C7 /* ContentView.swift */,
 				3B0281CD2BE01B250088A0C7 /* Item.swift */,
+				3BBB9FB42BE1DE0900CC7222 /* Views */,
 				3B0281CF2BE01B270088A0C7 /* Assets.xcassets */,
 				3B0281D12BE01B270088A0C7 /* Preview Content */,
 			);
@@ -73,6 +75,15 @@
 				3B0281D22BE01B270088A0C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BBB9FB42BE1DE0900CC7222 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BBB9FB52BE1DE1A00CC7222 /* SplashScreen.swift */,
+				3BBB9FB72BE1DEAB00CC7222 /* OnboardingScreens.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0281CC2BE01B250088A0C7 /* ContentView.swift in Sources */,
+				3BBB9FB62BE1DE1A00CC7222 /* SplashScreen.swift in Sources */,
+				3BBB9FB82BE1DEAB00CC7222 /* OnboardingScreens.swift in Sources */,
 				3B0281CE2BE01B250088A0C7 /* Item.swift in Sources */,
 				3B0281CA2BE01B250088A0C7 /* kpssAppApp.swift in Sources */,
 			);
